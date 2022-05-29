@@ -12,8 +12,7 @@ public class SQRServiceTest {
             "'minSQR', 200, 200, 0",
             "'maxSQR', 100, 100, 1",
             "'zeroSQR', 10, 10, 0",
-            "'maxAmountSQR', 100, 34359, 90",
-            "'wrongAmountSQR', 200, 300, 7"})
+            "'maxAmountSQR', 100, 34359, 90",})
     void counter(String testName, int min, int max, int expected) {
         SQRService service = new SQRService();
         int actual = service.counter(min, max);
